@@ -54,9 +54,11 @@
             </manifest>
             <fileset dir="${builddir}"/>
             <zipfileset src="${json-simple.jar}"/>
+<!--
             <zipfileset src="${logback-classic.jar}"/>
             <zipfileset src="${logback-core.jar}"/>
             <zipfileset src="${slf4j-api.jar}"/>
+-->
         </jar>
     </target>
 </project>

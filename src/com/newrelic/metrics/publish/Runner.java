@@ -44,10 +44,6 @@ public class Runner {
 
         try {
             Config.init();
-            Logger.init(Config.getValue("log_level", "info"),
-                        Config.getValue("log_file_path", "logs"),
-                        Config.getValue("log_file_name", "newrelic_plugin.log"),
-                        getLogLimitInKilobytes());
             logger = Logger.getLogger(Runner.class);
             config = new SDKConfiguration();
         } catch (Exception e) {
